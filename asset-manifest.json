@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Freepress/static/css/main.b0ed12d9.css",
+    "main.js": "/Freepress/static/js/main.4554531a.js",
+    "static/js/453.ed3810f9.chunk.js": "/Freepress/static/js/453.ed3810f9.chunk.js",
+    "static/media/logo.png": "/Freepress/static/media/logo.6f2420769cb51363192b.png",
+    "static/media/env.png": "/Freepress/static/media/env.9082177d266cee25a57b.png",
+    "index.html": "/Freepress/index.html",
+    "main.b0ed12d9.css.map": "/Freepress/static/css/main.b0ed12d9.css.map",
+    "main.4554531a.js.map": "/Freepress/static/js/main.4554531a.js.map",
+    "453.ed3810f9.chunk.js.map": "/Freepress/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0ed12d9.css",
+    "static/js/main.4554531a.js"
+  ]
+}
