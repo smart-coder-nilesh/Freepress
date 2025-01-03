@@ -39,13 +39,11 @@ const Footer = () => {
                 setmessage(data.message)
                 setShowModal(true)
             }
+            //code to show messgae modal
 
         } catch (error) {
             console.log('There was an error adding the item!', error);
         }
-
-
-        // Show modal when user subscribes
     };
 
     const handleCloseModal = () => {

@@ -25,7 +25,18 @@ body {
               rgba(17, 0, 253, 0) 100%);
    /* Spacing above and below the line */
 }
-
+/* skeleton */
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

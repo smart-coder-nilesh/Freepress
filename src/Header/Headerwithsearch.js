@@ -8,9 +8,9 @@ import axios from "axios";
 import ToggleSwitch from "../Body/Toggleswitch";
 import {apis} from "../Api/Api.js"
 const Headerwithsearch = ({ mode, toggleMode }) => {
+
     const [query, setQuery] = useState("");
     const [suggestions, setSuggestions] = useState([]);
-
 
     useEffect(() => {
         if (query.length > 0) {
@@ -22,9 +22,9 @@ const Headerwithsearch = ({ mode, toggleMode }) => {
 
     const loadSuggestions = async (query) => {
         try {
-
+            const response1 = await axios.get(`${apis.headsearch}?query=${query}`); // Use fetch if preferred
             const response = await axios.get(`${apis.headsearch}`); // Use fetch if preferred
-            // Assuming the API returns a JSON array
+            // API returns a JSON array
             console.log(response.data)
             const title = response.data.map((items) => items.title);
             const filter_title = title.filter(item => item.toLowerCase().includes(query.toLowerCase()))
