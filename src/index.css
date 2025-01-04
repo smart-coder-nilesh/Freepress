@@ -16,7 +16,10 @@ body {
  
   height: 90px; 
 }
-
+.headline{
+  font-family : STIX Two Text;
+  font-weight : 700;
+}
 .animate { /* Start with a thicker line */
   background: linear-gradient(to right, 
               rgba(8, 74, 240, 0) 0%,   /* Start with transparency */

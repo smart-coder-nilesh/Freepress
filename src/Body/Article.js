@@ -1,10 +1,11 @@
 import React from "react";
+import '../index.css';
 
 const Article = () => {
     return (
         <>
             <section>
-                <h2 className="text-center mb-4">Categories and Articles</h2>
+                <h2 className="text-center mb-4 headline">Categories and Articles</h2>
                 <div className="row">
                     {[
                         {
