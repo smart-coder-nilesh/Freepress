@@ -6,7 +6,7 @@ import blue from "../assests/bluenotify.png"
 import "./Headerwithsearch.css";
 import axios from "axios";
 import ToggleSwitch from "../Body/Toggleswitch";
-import {apis} from "../Api/Api.js"
+import {apis} from "../Api/Api.js";
 
 
 const Headerwithsearch = ({ mode, toggleMode }) => {

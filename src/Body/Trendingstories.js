@@ -21,7 +21,7 @@ const TrendingStories = () => {
     }
   };
 
-  useEffect(() =>{
+  useEffect((scrollPosition) =>{
     if(stories.length === 0){
       const padding = new Array(4).fill(null);
       setwindow(padding); 
@@ -31,7 +31,7 @@ const TrendingStories = () => {
     
   }, [stories]);
 
-  useEffect(() => {
+  useEffect((fetchStories) => {
     if(isFirstRender.current){
       isFirstRender.current = false
       fetchStories();
