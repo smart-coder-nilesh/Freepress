@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../assests/logo.png";
-import red from "../assests/rednotify.png";
+// import red from "../assests/rednotify.png";
 import blue from "../assests/bluenotify.png"
 import "./Headerwithsearch.css";
 import axios from "axios";
 import ToggleSwitch from "../Body/Toggleswitch";
 import {apis} from "../Api/Api.js"
+
+
 const Headerwithsearch = ({ mode, toggleMode }) => {
 
     const [query, setQuery] = useState("");
@@ -22,7 +24,7 @@ const Headerwithsearch = ({ mode, toggleMode }) => {
 
     const loadSuggestions = async (query) => {
         try {
-            const response1 = await axios.get(`${apis.headsearch}?query=${query}`); // Use fetch if preferred
+            // const response1 = await axios.get(`${apis.headsearch}?query=${query}`); // Use fetch if preferred
             const response = await axios.get(`${apis.headsearch}`); // Use fetch if preferred
             // API returns a JSON array
             console.log(response.data)
