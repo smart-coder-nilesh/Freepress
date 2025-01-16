@@ -31,9 +31,19 @@ const TrendingStories = () => {
     
   }, [stories]);
 
-  useEffect((fetchStories) => {
+  useEffect((page,stories) => {
+    const fetchStories = async () => {
+      try {
+        const response = await fetch(`${apis.stories}?page=${page}`);
+        const data = await response.json();
+        const newStories = data.results.filter(result => !stories.some(story => story.id === result.id)); 
+        setStories((stories) => [...stories, ...newStories]);// Assume the API returns an array of stories
+      } catch (error) {
+        console.error("Error fetching stories:", error);
+      }
+    };
     if(isFirstRender.current){
-      isFirstRender.current = false
+      isFirstRender.current = false;
       fetchStories();
     }
   }, []);
